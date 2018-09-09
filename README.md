@@ -43,6 +43,7 @@ set :eye_env, -> { { rails_env: fetch(:stage) } } # capistrano environment
 set :eye_application, -> { fetch(:application) } # capistrano application name by default
 set :eye_config, -> { "./config/#{fetch(:application)}.eye" } # ./config/eye_application.eye
 set :eye_work_dir, -> { release_path } # working directory path for eye
+set :eye_command, -> { 'eye' } # command to start eye
 ```
 
 ## Contributing
